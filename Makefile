@@ -7,6 +7,7 @@ default:
 	mkdir -p tmp
 	cp ~/.inputrc ./tmp 
 	cp ~/.vimrc ./tmp 
+	cp ~/.tmux.conf ./tmp 
 	cp ~/.vim ./tmp  -rf
 	cp ~/.indexer_files ./tmp 
 	rm -f linux_dotfiles.tar 
@@ -22,6 +23,7 @@ extract:
 	tar xvf linux_dotfiles.tar
 	cp ./tmp/.vim ~ -rf
 	cp ./tmp/.vimrc ~ -rf
+	cp ./tmp/.tmux.conf ~ -rf
 	cp ./tmp/.inputrc ~ -rf
 	cp ./tmp/.indexer_files ~ -rf
 	rm -R -f tmp 
