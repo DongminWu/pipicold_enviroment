@@ -27,6 +27,13 @@ extract:
 	cp ./tmp/.inputrc ~ 
 	cp ./tmp/.indexer_files ~ 
 	rm -R -f tmp 
+
+.PHONY: setenv
+
+setenv:
+	git config --global alias.st status
+	git config --global alias.br branch
+	git config --global alias.co checkout
 clean:
 	rm -R ./tmp
 	@echo "==================="
